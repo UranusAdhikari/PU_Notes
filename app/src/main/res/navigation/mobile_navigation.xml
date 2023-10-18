@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.notes.pu_notes_app.ui.home.HomeFragment"
+        android:label="P.U. Notes"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.notes.pu_notes_app.ui.search.GalleryFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/nav_about_app"
+        android:name="com.notes.pu_notes_app.ui.about_app.SlideshowFragment"
+        android:label="About App"
+        tools:layout="@layout/fragment_about_app" />
+    <fragment
+        android:id="@+id/nav_rate_app"
+        android:name="com.notes.pu_notes_app.ui.rate_app.RateAppFragment"
+        android:label="Rate App"
+        tools:layout="@layout/fragment_rate_app" />
+    <fragment
+        android:id="@+id/nav_share_app"
+        android:name="com.notes.pu_notes_app.ui.share_app.ShareAppFragment"
+        android:label="Share App"
+        tools:layout="@layout/fragment_share_app" />
+
+</navigation>
